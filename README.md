@@ -49,6 +49,9 @@ This will return you a query with similar results as being displayed bellow.
 - Add exception treatment.
 - Results still not consistent, I need to specify address, need to work in a way to improve that by creating a interface that allow users to specify address / metro areas and maybe use similarity function to return the most probable results.
 - Implement cache with SQLite?
+
 ~~- Apply specialization and separate content providers in external files.~~
+
 ~~- Modularize this.~~
+
 ~~- Code running in the client side has reduntant content that can be refactored/simplified.~~
