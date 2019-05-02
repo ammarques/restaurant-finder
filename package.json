@@ -1,12 +1,10 @@
 {
   "name": "restaurant-finder",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a puppeteer scraper based search functionality to locate joints in websites like opentable, yelp or tripadvisor without using their API's",
   "main": "index.js",
-  "requires": true,
   "author": "Anderson Marques",
   "license": "MIT",
-  "lockfileVersion": 1,
   "bugs": {
     "url": "https://github.com/ammarques/restaurant-finder/issues"
   },
@@ -1147,5 +1145,8 @@
         "fd-slicer": "~1.0.1"
       }
     }
+  },
+  "scripts": {
+    "postinstall": "npm install"
   }
 }
