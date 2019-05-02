@@ -3,15 +3,14 @@ I scraper search utility to provide a restaurant search in websites like OpenTab
 
 ## Usage
 
-*Install dependencies:*
-> npm install
+*Installing the module:*
+> npm install ammarques/restaurant-finder#master
 
-*Direcly execute the index.js file:*
-> node index.js //yes I know it's ugly, I'll change this(_eventually_).
-
-Atm just directly call **_find("bricco")_**
-Based on your query, scrapers will grab suggestions classify their titles base on text similarities, reorder(similarity score descendant), and return an object array, limited by a max of 3 elements per source(OpenTable, Yelp, TripAdvisor).
-
+```
+const restaurant = require('restaurant-finder');
+restaurant.finder("bricco");
+```
+This will return you a query with similar results as being displayed bellow.
 **return:**
 ```
 [
@@ -46,8 +45,10 @@ Based on your query, scrapers will grab suggestions classify their titles base o
 ]
 ```
 ## Roadmap
-~~- Code running in the client side has reduntant content that can be refactored/simplified.~~
-- Results still not consistent, need to work in a way to improve that by creating a interface that allow users to specify address / metro areas and maybe use similarity function to return the most probable results.
-- Modularize this.
-- Apply specialization and separate content providers in external files.
+
+- Add exception treatment.
+- Results still not consistent, I need to specify address, need to work in a way to improve that by creating a interface that allow users to specify address / metro areas and maybe use similarity function to return the most probable results.
 - Implement cache with SQLite?
+~~- Apply specialization and separate content providers in external files.~~
+~~- Modularize this.~~
+~~- Code running in the client side has reduntant content that can be refactored/simplified.~~
