@@ -1,4 +1,5 @@
 {
+  "name": "restaurant-finder",
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
